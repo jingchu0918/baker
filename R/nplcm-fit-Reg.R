@@ -1327,7 +1327,7 @@ nplcm_fit_Reg_NoNest <-
     if (length(prior$Eti_prior)>1){
       stop("== [baker] Regression model used. Please change `model_options$prior$Eti_prior` 
            into a single, positive real number representing
-           the stanadrd deviation of beta coefficients in etiology regression! ==")
+           the standard deviation of beta coefficients in etiology regression! ==")
     }
     sd_betaEti      <- prior$Eti_prior
     in_data <- unique(c(in_data,"sd_betaEti"))
